@@ -225,9 +225,7 @@ Garage::~Garage()
 {
 	for (size_t i = 0; i < Vehicles.size(); i++)
 	{
-		
-		delete Vehicles.at(i);
-		Vehicles.erase(Vehicles.begin() + i);
+		delete Vehicles.at(i);	
 	}
-	
+	Vehicles.erase(Vehicles.begin(), Vehicles.begin()+Vehicles.size());
 }

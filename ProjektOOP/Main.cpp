@@ -39,7 +39,7 @@ void PrintMenu()
 
 void newGarage(int size)
 {
-	garage->~Garage();
+	
 	delete garage;
 	garage = new Garage(size);
 }
