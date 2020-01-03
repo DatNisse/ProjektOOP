@@ -5,19 +5,14 @@ void Car::SetType()
 	this->VehicleType = "Car";
 }
 
-void Car::SetColor(string color)
+void Car::SetSeats(int numSeats)
 {
-	this->color = color;
+	this->numOfSeat = numSeats;
 }
 
-void Car::SetWheels(int wheels)
+void Car::SetConv(bool isConvertable)
 {
-	this->wheels = wheels;
-}
-
-void Car::SetRegNum(string regNum)
-{
-	this->regNum = regNum;
+	this->isConvertable = isConvertable;
 }
 
 string Car::GetType()
@@ -25,29 +20,24 @@ string Car::GetType()
 	return this->VehicleType;
 }
 
-string Car::GetColor()
+int Car::GetSeats()
 {
-	return this->color;
+	return this->numOfSeat;
 }
 
-int Car::GetWheels()
+bool Car::GetConv()
 {
-	return this->wheels;
-}
-
-string Car::GetRegNum()
-{
-	return this->regNum;
+	return this->isConvertable;
 }
 
 void Car::Print()
 {
-	cout << "Regnumber: " << this->regNum << endl; 
-	cout << "Color" << this->color << endl;
-	cout << "Type of Vehicle: " << this->VehicleType << endl;
-	cout << "Number of wheels: " << this->wheels << endl;
-	cout << "Number of seats: " << this->numOfSeat << endl;
-	cout << "Car is a convirtible: " << this->isConvertable << endl;
+	cout << "Regnumber: " << GetRegNum() << endl; 
+	cout << "Color: " << GetColor() << endl;
+	cout << "Type of Vehicle: " << GetType() << endl;
+	cout << "Number of wheels: " << GetWheels() << endl;
+	cout << "Number of seats: " << GetSeats() << endl;
+	cout << "Car is a convirtible: " << GetConv() << endl;
 	
 }
 
@@ -63,10 +53,13 @@ Car::Car(string regNum, string color, int wheels, bool isConvertable, int numOfS
 	SetColor(color);
 	SetWheels(wheels);
 	SetRegNum(regNum);
-	this->isConvertable = isConvertable;
-	this->numOfSeat = numOfSeat;
+	SetSeats(numOfSeat);
+	SetConv(isConvertable);
 }
 
 Car::~Car()
 {
+	cout << "car was deleted" << endl;
 }
+
+

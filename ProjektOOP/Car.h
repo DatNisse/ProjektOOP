@@ -9,25 +9,25 @@ class Car :
 	public Vehicle
 {
 public:
+
 	string VehicleType;
-	string regNum;
-	string color;
-	int wheels;
 	bool isConvertable;
 	int numOfSeat;
 
 	void SetType();
-	void SetColor(string color);
-	void SetWheels(int wheels);
-	void SetRegNum(string regNum);
+	void SetSeats(int numSeats);
+	void SetConv(bool isConvertable);
+
 	string GetType();
-	string GetColor();
-	int GetWheels();
-	string GetRegNum();
+	int GetSeats();
+	bool GetConv();
 
 	void Print();
 	Car();
 	Car(string regNum, string color, int wheels, bool isConvertable, int numOfSeat);
 	~Car();
+
+	
+	
 };
 

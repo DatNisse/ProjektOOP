@@ -1,2 +1,10 @@
-﻿  Main.cpp
+﻿  Garage.cpp
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.h(16,14): warning C4200: nonstandard extension used: zero-sized array in struct/union
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.h(16,14): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.cpp(41,24): warning C4018: '>=': signed/unsigned mismatch
+  Main.cpp
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.cpp(197,20): warning C4018: '<': signed/unsigned mismatch
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.h(16,14): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  Generating Code...
+C:\Projekt\ProjektOOP\ProjektOOP\Garage.h(16,14): message : This member will be ignored by a defaulted constructor or copy/move assignment operator
   ProjektOOP.vcxproj -> C:\Projekt\ProjektOOP\ProjektOOP\Debug\ProjektOOP.exe
